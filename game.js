@@ -70,4 +70,15 @@ function startOver(){
     level = 0;
     gamePattern = [];
     started = false;
+    $("#click-here").fadeIn();
 }
+
+$("#click-here").click(function() {
+    if (!started) {
+      $("#level-title").text("Level " + level);
+      nextSequence();
+      started = true;
+      $("#click-here").fadeOut();
+    }
+
+});
