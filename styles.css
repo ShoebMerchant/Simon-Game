@@ -10,6 +10,9 @@ body {
   color: #FEF2BF;
 }
 
+#click-here {
+  color: white;
+}
 .container {
   display: block;
   width: 50%;
